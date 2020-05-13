@@ -1,5 +1,9 @@
 # Glassdoor 'Data Science' jobs salary estimator: Project Overview
 
+### Complete project has been done in two files:
+#### - *'Glassdoor Job Postings - Exploratory Data Analysis.ipynb' ->(Data Cleaning and EDA)*
+#### - *'Glassdoor Job Postings - Data Modelling.ipynb' ->(Data Modelling and Evaluation)*
+
 - Created a tool that estimated data science salary(MAE ~ $ 11.7 k) which estimates data scientists negotiate their income when they get a job in USA.
 - Scraped over 1000 job descriptions from glassdoor using python and selenium
 - Engineered features from the text of each job description to quantify the value companies put on python, excel, aws, and spark.
@@ -47,7 +51,7 @@ After scraping the data, I needed to clean it up so that it was usable for our m
 
 
 ## Exploratory Data Analysis
-![](Average Salaries vs Number of roles.png)
+The complete EDA analysis has been done in *Glassdoor Job Postings - Exploratory Data Analysis.ipynb*
 
 ## Model Building
 
@@ -57,8 +61,13 @@ I tried three different models and evaluated them using Mean Absolute Error. I c
 
 I tried three different models:
 
-- Multiple Linear Regression – Baseline for the model
-- Lasso Regression – Because of the sparse data from the many categorical variables, I thought a normalized regression like lasso would be effective.
-- Random Forest – Again, with the sparsity associated with the data, I thought that this would be a good fit
+- **Multiple Linear Regression** – Baseline for the model
+- **Lasso Regression** – Because of the sparse data from the many categorical variables, I thought a normalized regression like lasso would be effective.
+- **Random Forest** – Again, with the sparsity associated with the data, I thought that this would be a good fit
 
 
+## Model Performance
+The Random Forest model far outperformed the other approaches on the test and validation sets.
+
+Random Forest : MAE = $ 11.74 K
+Ridge Regression: MAE = $ 16.68 K
