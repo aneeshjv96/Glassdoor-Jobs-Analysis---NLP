@@ -69,5 +69,5 @@ I tried three different models:
 ## Model Performance
 The Random Forest model far outperformed the other approaches on the test and validation sets.
 
-Random Forest : MAE = $ 11.74 K
-Ridge Regression: MAE = $ 16.68 K
+- Random Forest : MAE = $ 11.74 K
+- Ridge Regression: MAE = $ 16.68 K
